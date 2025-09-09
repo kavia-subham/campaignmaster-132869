@@ -12,28 +12,22 @@ export default function Header() {
   };
 
   return (
-    <div className="header" style={{ display: 'flex', alignItems: 'center', gap: 12, width: '100%' }}>
+    <div className="header flex items-center gap-3" style={{ width: '100%' }}>
       <button
-        className="header__menu-btn"
+        className="header__menu-btn btn btn-ghost"
         aria-label="Toggle navigation"
         onClick={toggleSidebar}
         style={{
-          background: 'transparent',
-          border: '1px solid var(--border)',
-          color: 'var(--text)',
-          borderRadius: 8,
           width: 36,
           height: 36,
-          display: 'inline-flex',
-          alignItems: 'center',
-          justifyContent: 'center',
-          cursor: 'pointer'
+          padding: 0,
+          borderRadius: 'var(--radius-md)'
         }}
       >
         ☰
       </button>
-      <div className="header__brand" style={{ fontWeight: 700 }}>CampaignFlow</div>
-      <div style={{ marginLeft: 'auto', color: 'var(--text-muted)', fontSize: 14 }}>
+      <div className="header__brand font-bold">CampaignFlow</div>
+      <div className="text-muted text-sm" style={{ marginLeft: 'auto' }}>
         {/* Placeholder for user/avatar/actions */}
       </div>
     </div>

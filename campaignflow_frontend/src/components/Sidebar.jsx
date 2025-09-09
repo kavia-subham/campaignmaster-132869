@@ -25,7 +25,7 @@ export default function Sidebar() {
             <NavLink
               to={l.to}
               className={({ isActive }) =>
-                `sidebar__item ${isActive ? 'active' : ''}`
+                `nav-item sidebar__item ${isActive ? 'active' : ''}`
               }
               end={l.to === ROUTES.HOME}
             >
