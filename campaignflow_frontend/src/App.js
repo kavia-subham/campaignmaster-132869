@@ -2,8 +2,8 @@ import React from 'react';
 import './App.css';
 import MainLayout from './layouts/MainLayout';
 import { Header, Sidebar } from './components';
-import Home from './pages/Home';
 import { useTheme } from './hooks/useTheme';
+import AppRoutes from './routes/AppRoutes';
 
 /**
  * PUBLIC_INTERFACE
@@ -23,7 +23,7 @@ function App() {
         {theme === 'light' ? '🌙 Dark' : '☀️ Light'}
       </button>
       <MainLayout header={<Header />} sidebar={<Sidebar />}>
-        <Home />
+        <AppRoutes />
       </MainLayout>
     </div>
   );

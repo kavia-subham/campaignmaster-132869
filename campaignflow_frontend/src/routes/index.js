@@ -1,13 +1,14 @@
 /// PUBLIC_INTERFACE
-/** Routes registry placeholder.
- * This file centralizes route constants and lazy page loaders when routing is added.
- * For now, it only exports simple constants as placeholders.
+/** Routes registry.
+ * Centralized route constants and helpers.
  */
 export const ROUTES = {
   HOME: '/',
+  LOGIN: '/login',
   DASHBOARD: '/dashboard',
   CAMPAIGNS: '/campaigns',
   TASKS: '/tasks',
   TEAM: '/team',
   SETTINGS: '/settings',
+  NOT_FOUND: '*',
 };
